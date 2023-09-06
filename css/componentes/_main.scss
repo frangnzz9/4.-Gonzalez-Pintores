@@ -1,0 +1,125 @@
+/* INDEX */
+.container-main-index{
+    padding: map-get($objetos-index , pd-1 );
+    @extend %column;
+}
+main div div button{
+    background-color: nth($clrs-blue , 2 );
+    padding: map-get($objetos-index , pd-2 );
+    margin: map-get($objetos-index, mrg);
+    border-radius: map-get($objetos-index, brd-r);
+    &:hover{
+        background-color: nth($clrs-blue , 1 );
+        color: nth($clrs-blue , 4 );
+    }
+}
+.container-button{
+    @extend %row;
+}
+main div div button a{
+    color: nth($byn, 2 );
+}
+.card-body-index{
+   border: map-get($objetos-index, brd);
+}
+
+/* TRABAJOS REALIZADOS */
+.main-trabajos-realizados div img{
+    padding: 20px;
+}
+.main-trabajos-realizados div h2,
+.main-sobre-nosotros h2,
+.main-informacion h2,
+.main-contacto h2,
+.container-main-index h1{
+    text-align: center;
+    margin: 4rem;
+    color: nth($clrs-blue, 1 );
+    font-weight: 700;
+}
+.main-sobre-nosotros p {
+       font-size: large; 
+       margin: 2rem;
+       background-color: nth($clrs-blue, 4 );
+       padding: 2rem;
+       border: 2px solid nth($clrs-blue, 1 );
+}
+.row-cajas{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.main-informacion div .caja {
+    padding: 10px;
+    border: 2px solid nth($clrs-blue, 1 );
+    margin: 10px;
+}
+.color-caja{
+    background-color: nth($clrs-blue, 4 );
+    margin: 20px;
+}
+.formulario-mio{
+    margin: 50px 250px;
+}
+@media (max-width:750px){
+    .formulario-mio{
+        margin: 25px 25px;
+    }
+}
+.color-button-mio{
+    background-color: nth($clrs-blue, 1 );
+    &:hover{
+        background-color: nth($clrs-blue, 4 );
+        color: nth($clrs-blue, 1 );
+    }
+}
+.contenedor-absoluto {
+    display: flex;
+    @extend %row;
+    margin: 200px 0px;
+    div{
+       height: 200px;
+       width: 200px;
+       position: absolute;
+    }
+}
+.contenedor-absoluto div:nth-child(1) img{
+        width: 200px;
+        height: 200px;
+}
+.contenedor-absoluto div:nth-child(2){
+    background-color: nth($clrs-blue, 4 );
+    p{
+        text-align: center;
+        font-size: 50px;
+      }
+    &:hover{
+        transform: translateX(200px);
+        transition: 3s;
+    }
+}
+
+@media (min-width:750px) and (max-width:1000px){
+    .img-inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.container-main-index{
+    h2{
+        font-size: x-large;
+        text-align: center;
+        margin: 30px 0px;
+        padding: 50px;
+        background-color: nth($clrs-blue,3 );
+    }
+   h2 a{
+    text-decoration: none;
+    color:nth($clrs-blue, 1 );
+   }
+   p a{
+    text-decoration: none;
+    color:nth($clrs-blue, 1 );
+   }
+}
